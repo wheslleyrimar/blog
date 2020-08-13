@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-4">
+      <div class="card border-0" style="width: 18rem;">
+        <div class="d-flex justify-content-center">
+          <img src="./../../assets/perfil.png" class="card-img-top rounded-circle w-75" alt="Foto do usuário">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Wheslley Rimar</h5>
+          <p class="card-text text-center">Desenvolvedor Web Fullstack</p>
+          <a href="https://github.com/wheslleyb" target="_blank"
+            class="btn btn-outline-dark d-flex justify-content-center">Github</a>
+
+          <hr class="mt-4 mb-4">
+
+          <h6 class="mb-3 text-monospace text-center">Pesquisar por nome</h6>
+
+          <input type="text" class="form-control mb-3 w-100">
+          <button class="btn btn-outline-warning w-100">Pesquisar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div>
+        <h3 class="text-center mb-4 text-monospace">Digite abaixo os seus comentários:</h3>
+
+        <div class="form-group">
+          <label for="nome" class="text-monospace">Nome:</label>
+          <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome"
+            [(ngModel)]='post.nome'>
+        </div>
+        <div class="form-group">
+          <label for="mensagem" class="text-monospace">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="4" class="form-control"
+            placeholder="Digite a sua mensagem" [(ngModel)]='post.mensagem'></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-info w-25" (click)='cadastrarMensagem()'>Publicar</button>
+        </div>
+
+      </div>
+      <hr class="mt-5 mb-5">
+
+      <h3 class="text-center mb-5 text-monospace">Comentários adicionados</h3>
+      <div class="container">
+        <div class="card mb-4" *ngFor="let post of listPost">
+          <div class="card-header">
+            <h5 class="card-tile">{{post.id}}</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{post.nome}}</p>
+            <p class="card-text">{{post.mensagem}}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

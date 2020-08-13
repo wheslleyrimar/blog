@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "nome": "Wheslley",
+      "mensagem": "Esta postagem foi atualizada!",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "Carlos",
+      "mensagem": "Esta é minha primeira postagem!"
+    },
+    {
+      "id": 4,
+      "nome": "Gabriel",
+      "mensagem": "Esta é uma nova postagem!"
+    },
+    {
+      "id": 5,
+      "nome": "Pedro",
+      "mensagem": "Texto novo!"
+    },
+    {
+      "nome": "Wheslley Rimar Bezerra",
+      "mensagem": "Este é um teste do POST",
+      "id": 6
+    },
+    {
+      "nome": "Teste 2",
+      "mensagem": "Teste Teste Teste",
+      "id": 7
+    },
+    {
+      "nome": "Nova Mensagem",
+      "mensagem": "Teste Novamente",
+      "id": 8
+    }
+  ]
+}
